@@ -1,17 +1,17 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/W32TeX) (format=pdflatex 2013.11.17)  2 AUG 2016 14:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/W32TeX) (format=pdflatex 2014.1.6)  2 AUG 2016 23:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **GHG.tex
 (./GHG.tex
 LaTeX2e <2011/06/27>
-Babel <3.9g> and hyphenation patterns for 78 languages loaded.
+Babel <3.9h> and hyphenation patterns for 78 languages loaded.
 (c:/usr/texlive/2013/texmf-dist/tex/latex/beamer/beamer.cls
 (c:/usr/texlive/2013/texmf-dist/tex/latex/beamer/beamerbasercs.sty
-Package: beamerbasercs 2013/10/18 (rcs-revision 0925de4405ff)
+Package: beamerbasercs 2013/12/25 (rcs-revision 31cc758a62ae)
 )
-Document Class: beamer 2013/04/04 3.31 A class for typesetting presentations (r
-cs-revision dca7db0ccda1)
+Document Class: beamer 2013/12/02 3.33 A class for typesetting presentations (r
+cs-revision 332bfd3ce558)
 (c:/usr/texlive/2013/texmf-dist/tex/latex/beamer/beamerbasemodes.sty
 Package: beamerbasemodes 2013/09/03 (rcs-revision 768f2d98ca64)
 \beamer@tempbox=\box26
@@ -347,6 +347,9 @@ Package: xxcolor 2003/10/24 ver 0.1
 \XC@nummixins=\count116
 \XC@countmixins=\count117
 )
+(c:/usr/texlive/2013/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+)
 (c:/usr/texlive/2013/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -389,7 +392,7 @@ Package: hopatch 2012/05/28 v1.2 Wrapper for package hooks (HO)
 Package: xcolor-patch 2011/01/30 xcolor patch
 Package: atveryend 2011/06/30 v1.8 Hooks at the very end of document (HO)
 Package atveryend Info: \enddocument detected (standard20110627).
-Package: atbegshi 2011/10/05 v1.16 At begin shipout hook (HO)
+Package hobsub Info: Skipping package `atbegshi' (already loaded).
 Package: refcount 2011/10/16 v3.4 Data extraction from label references (HO)
 Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 )
@@ -430,7 +433,7 @@ Package hyperref Info: Bookmarks ON on input line 4688.
 
 (c:/usr/texlive/2013/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip10
-Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen162
@@ -506,7 +509,7 @@ Package: beamerbasemisc 2013/09/03  (rcs-revision a55719c41d85)
 Package: beamerbasetwoscreens 2010/05/01  (rcs-revision efa082c6111d)
 )
 (c:/usr/texlive/2013/texmf-dist/tex/latex/beamer/beamerbaseoverlay.sty
-Package: beamerbaseoverlay 2012/11/11  (rcs-revision 6afbc49b1109)
+Package: beamerbaseoverlay 2013/12/25  (rcs-revision f6bd5e3805da)
 \beamer@argscount=\count126
 \beamer@lastskipcover=\skip44
 \beamer@trivlistdepth=\count127
@@ -552,7 +555,7 @@ Package: beamerbaseframesize 2011/09/12  (rcs-revision 70f9d8411e54)
 \beamer@framesubtitletoks=\toks26
 )
 (c:/usr/texlive/2013/texmf-dist/tex/latex/beamer/beamerbaseframecomponents.sty
-Package: beamerbaseframecomponents 2013/10/04  (rcs-revision ea094b4278bd)
+Package: beamerbaseframecomponents 2013/10/18  (rcs-revision 5cf6c5555a45)
 \beamer@footins=\box44
 ) (c:/usr/texlive/2013/texmf-dist/tex/latex/beamer/beamerbasecolor.sty
 Package: beamerbasecolor 2010/06/06  (rcs-revision d1a9b48be06d)
@@ -1625,47 +1628,47 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 ] (./GHG.toc) [12
 
 ]
-Overfull \hbox (3.34242pt too wide) in alignment at lines 327--327
+Overfull \hbox (3.34242pt too wide) in alignment at lines 326--326
  [][][] []
  []
 
 
-Overfull \hbox (6.15636pt too wide) detected at line 327
+Overfull \hbox (6.15636pt too wide) detected at line 326
 \OT1/ztmcm/m/n/9 = []
  []
 
 [13
 
-] <Edformula.png, id=451, 667.293pt x 379.6584pt>
+] <Edformula.png, id=453, 667.293pt x 379.6584pt>
 File: Edformula.png Graphic file (type png)
  <use Edformula.png>
-Package pdftex.def Info: Edformula.png used on input line 340.
+Package pdftex.def Info: Edformula.png used on input line 339.
 (pdftex.def)             Requested size: 307.28987pt x 174.83615pt.
 
 [14
 
  <./Edformula.png>] [15
 
-] <Citigas.png, id=505, 673.76718pt x 663.22781pt>
+] <Citigas.png, id=506, 673.76718pt x 663.22781pt>
 File: Citigas.png Graphic file (type png)
 
 <use Citigas.png>
-Package pdftex.def Info: Citigas.png used on input line 391.
+Package pdftex.def Info: Citigas.png used on input line 389.
 (pdftex.def)             Requested size: 153.64493pt x 151.24382pt.
  [16
 
  <./Citigas.png>]
-<match.png, id=532, 1262.46657pt x 519.44063pt>
+<match.png, id=533, 1262.46657pt x 519.44063pt>
 File: match.png Graphic file (type png)
  <use match.png>
-Package pdftex.def Info: match.png used on input line 410.
+Package pdftex.def Info: match.png used on input line 401.
 (pdftex.def)             Requested size: 307.28987pt x 126.43579pt.
  [17
 
  <./match.png>] [18
 
 ]
-Overfull \hbox (19.1386pt too wide) in alignment at lines 458--458
+Overfull \hbox (19.1386pt too wide) in alignment at lines 444--444
  [][][] []
  []
 
@@ -1682,7 +1685,7 @@ Overfull \hbox (19.1386pt too wide) in alignment at lines 458--458
 ] [24
 
 ]
-Overfull \hbox (12.16045pt too wide) in paragraph at lines 585--585
+Overfull \hbox (12.16045pt too wide) in paragraph at lines 555--555
  [][][][] 
  []
 
@@ -1691,7 +1694,7 @@ Overfull \hbox (12.16045pt too wide) in paragraph at lines 585--585
 ] <Espec.png, id=772, 1020.06094pt x 614.295pt>
 File: Espec.png Graphic file (type png)
  <use Espec.png>
-Package pdftex.def Info: Espec.png used on input line 599.
+Package pdftex.def Info: Espec.png used on input line 569.
 (pdftex.def)             Requested size: 307.28987pt x 185.05853pt.
  [26
 
@@ -1702,15 +1705,15 @@ Package pdftex.def Info: Espec.png used on input line 599.
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 664.
+(hyperref)                removing `math shift' on input line 624.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\times' on input line 664.
+(hyperref)                removing `\times' on input line 624.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 664.
+(hyperref)                removing `math shift' on input line 624.
 
 (./GHG.toc) [29
 
@@ -1720,7 +1723,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 File: ECform.png Graphic file (type png)
 
 <use ECform.png>
-Package pdftex.def Info: ECform.png used on input line 713.
+Package pdftex.def Info: ECform.png used on input line 666.
 (pdftex.def)             Requested size: 307.28987pt x 208.59837pt.
  [31
 
@@ -1728,17 +1731,27 @@ Package pdftex.def Info: ECform.png used on input line 713.
 <noncount.png, id=934, 654.7662pt x 367.1316pt>
 File: noncount.png Graphic file (type png)
  <use noncount.png>
-Package pdftex.def Info: noncount.png used on input line 727.
+Package pdftex.def Info: noncount.png used on input line 680.
 (pdftex.def)             Requested size: 307.28987pt x 172.29977pt.
  [32
 
- <./noncount.png>] <thanks.png, id=960, 353.1594pt x 87.6876pt>
+ <./noncount.png>] [33
+
+] <GTAPKR.png, id=986, 1043.39813pt x 657.95813pt>
+File: GTAPKR.png Graphic file (type png)
+
+<use GTAPKR.png>
+Package pdftex.def Info: GTAPKR.png used on input line 733.
+(pdftex.def)             Requested size: 307.28987pt x 193.77469pt.
+ [34
+
+ <./GTAPKR.png>]
+<thanks.png, id=1012, 353.1594pt x 87.6876pt>
 File: thanks.png Graphic file (type png)
  <use thanks.png>
-Package pdftex.def Info: thanks.png used on input line 744.
+Package pdftex.def Info: thanks.png used on input line 750.
 (pdftex.def)             Requested size: 307.28987pt x 76.2983pt.
-
-[33
+ [35
 
  <./thanks.png>]
 \tf@nav=\write6
@@ -1750,27 +1763,27 @@ Package pdftex.def Info: thanks.png used on input line 744.
 \tf@snm=\write8
 \openout8 = `GHG.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 747.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 747.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 753.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 753.
  (./GHG.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 747.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 747.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 753.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 753.
 Package rerunfilecheck Info: File `GHG.out' has not changed.
 (rerunfilecheck)             Checksum: 6802C1903636364597AB817B5344A0FF;1099.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 747.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 753.
  ) 
 Here is how much of TeX's memory you used:
- 26992 strings out of 493308
- 508599 string characters out of 6137821
- 625909 words of memory out of 5000000
- 29614 multiletter control sequences out of 15000+600000
- 111919 words of font info for 306 fonts, out of 8000000 for 9000
+ 27034 strings out of 493308
+ 509513 string characters out of 6137823
+ 626061 words of memory out of 5000000
+ 29647 multiletter control sequences out of 15000+600000
+ 114267 words of font info for 310 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 56i,15n,57p,392b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,15n,57p,392b,600s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/usr/texlive/2013/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/usr/texlive/2
 013/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/usr/texlive/2013/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/usr/texlive/2013/texmf-
@@ -1817,10 +1830,10 @@ onts/type1/urw/helvetic/uhvr8a.pfb><c:/usr/texlive/2013/texmf-dist/fonts/type1/
 urw/symbol/usyr.pfb><c:/usr/texlive/2013/texmf-dist/fonts/type1/urw/symbol/usyr
 .pfb><c:/usr/texlive/2013/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/usr/t
 exlive/2013/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on GHG.pdf (33 pages, 1571219 bytes).
+Output written on GHG.pdf (35 pages, 1645203 bytes).
 PDF statistics:
- 1199 PDF objects out of 1200 (max. 8388607)
- 1031 compressed objects within 11 object streams
- 75 named destinations out of 1000 (max. 500000)
- 158 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1252 PDF objects out of 1440 (max. 8388607)
+ 1080 compressed objects within 11 object streams
+ 79 named destinations out of 1000 (max. 500000)
+ 163 words of extra memory for PDF output out of 10000 (max. 10000000)
 

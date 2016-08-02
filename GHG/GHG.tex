@@ -263,6 +263,11 @@
 \begin{frame}
 	\frametitle{Step 1: 순 발열량 에너지 Balance 구축}
 	\begin{enumerate}
+	\item{해운, 항만 국제운송 에너지는 분석에서 제외: 국제운송 발생 배출량을 제외하는 집계방식 반영}
+		\begin{itemize}
+		\item{해운: 모든 해운 최종에너지 소비는 0으로 대체}
+		\item{항공: 항공 최종에너지 소비 중 28.7\%는 국제운송으로 간주하여 집계에서 제외\footnote{2007년 대한항공 영업보고서}} 
+		\end{itemize}			
 	\item{기본 공식 (i : 에너지원)}
 	\begin{displaymath}
 	\mbox{순 발열량} (E_i) =\mbox{총 발열량} (E^*_i) \times\frac{\mbox{석유환산계수(순발열량기준)}_i}{\mbox{석유환산계수(총발열량기준)}_i}
@@ -271,15 +276,9 @@
 		\item{석유환산계수: 2010에너지통계연보}
 		\end{itemize}
 	\item{ Wax, Asphalt, Solvent 는 배출량을 산정하지 않아서 순발열량을 0 으로 간주}
-    \bigskip
 	\item{ 기타제품(석유)은 석유환산계수가 존재하지 않아서 전환계수를 구할 수 없음$\rightarrow$ 0.93953으로 대치}
 	\end{enumerate}
 	
-	%\begin{itemize}
-	%\item{input: EB\_G.csv, CF.csv}
-	%\item{process: ghg.r (line 40:45)}
-	%\item{output:EB\_N}
-	%\end{itemize}
 	
 \end{frame}
 %----------------------------------------------------------------------------------------------
@@ -372,7 +371,6 @@
 \end{itemize}
 
 \end{enumerate} 	
-%input : EB\_N, process: ghg.r line 80-142	, output:E.Demand\_total	
 \end{frame}
 %----------------------------------------------------------------------------------------------
 % 
@@ -400,13 +398,6 @@
 	%\caption{}
 	%\label{IEA world balance}
 	\end{figure}	
-\begin{scriptsize}
-%\begin{itemize}
-%\item{input : %E.Demand\_total,E.Demand\_Crude,E.Demand\_Coalbriquette,E.Demand.Other\_c,"IO\_whole\_2009.csv"}
-%\item{process : ghg.r line 243-294}
-%\item{output :E.Demand\_IO }
-%\end{itemize}
-\end{scriptsize} 	
 \end{frame}
 %----------------------------------------------------------------------------------------------
 
@@ -420,11 +411,6 @@
 	\item{정제혼합용원료유,윤활유 및 그리스: 윤활기유 1차에너지 소비를 산업연관표를 사용하여 분할}
 	\item{화력발전, 자가발전: '화력 및 자가발전 총수요'를 산업연관표를 사용하여 분할}
 	\end{enumerate}
-%\begin{itemize}
-%\item{input : EB\_N, "OilData\_2009.csv", "IO\_Domestic\_2009.csv", "IO\_Import\_2009.csv","IO\_whole\_2009.csv"}
-%\item{process : ghg.r line 143-242}
-%\item{output : E.Demand\_Crude,E.Demand\_Coalbriquette,E.Demand.Other\_c}
-%\end{itemize} 		
 \end{frame}
 %----------------------------------------------------------------------------------------------
 %
@@ -517,17 +503,6 @@
 			\mbox{에너지 가계수요} (E_{i,h})&=&\mbox{에너지 총수요}(E_i)\times\frac{Household_i}{\Sigma_j IO_{ij}+Household_i}\\
 \end{eqnarray*}
 \end{small}
-%\item{예외 1. Naphta는 석유화학제품(143-171)에 투입된 중간수요액만을 사용하여 할당}
-%\begin{eqnarray*}
-%			& &\mbox{에너지 중간수요} (E_{ij}|_{143\le j \le 171})\\
-%			&=&\mbox{에너지 총수요}(E_i)\times\frac{\mbox{IO 총거래표 중간수요액}_{ij|143\le j \le 171}}{\sum_{143\le j \le 171}%\mbox{IO 총거래표 중간수요액}_{ij}}
-%\end{eqnarray*}
-
-%\begin{itemize}
-%\item{input : E.Demand\_IO, IO\_whole}
-%\item{process : ghg.r line 295-330}
-%\item{output :Energy\_BE\_overall }
-%\end{itemize} 
 		
 \end{frame}
 %----------------------------------------------------------------------------------------------
@@ -550,11 +525,6 @@
 \end{small}
 
 
-%\begin{itemize}
-%\item{input : E.Demand\_IO, IO\_whole}
-%\item{process : ghg.r line 331-410}
-%\item{output :Energy\_BE\_residual,Energy\_BE  }
-%\end{itemize} 
 \end{frame}
 %----------------------------------------------------------------------------------------------
 
@@ -621,11 +591,6 @@ E_{i,h}&=&(\mbox{에너지 총수요}(E_i)-\sum_{j\in J}E_{ij})\\
 \end{small}
 
 
-%\begin{itemize}
-%\item{input : E.Demand\_IO, IO\_whole}
-%\item{process : ghg.r line 331-410}
-%\item{output :Energy\_BE\_residual,Energy\_BE  }
-%\end{itemize} 
 \end{frame}
 %----------------------------------------------------------------------------------------------
 
@@ -648,11 +613,6 @@ E_{i,h|i\in(275,277),j \notin J}&=&(E_{275}+E_{277}-\sum_{j\in J}E_{275,j})\\
 \end{eqnarray*}
 
 
-%\begin{itemize}
-%\item{input : E.Demand\_IO, IO\_whole}
-%\item{process : ghg.r line 331-410}
-%\item{output :Energy\_BE\_residual,Energy\_BE  }
-%\end{itemize} 
 \end{small}
 
 \end{frame}
@@ -689,13 +649,6 @@ E_{i,h|i\in(275,277),j \notin J}&=&(E_{275}+E_{277}-\sum_{j\in J}E_{275,j})\\
 \item{이중계산 방지: 전력 및 열에너지는 사용 시 온실가스가 배출되지 않는다고 가정}
 \end{itemize}
 \end{enumerate}
-%\begin{small}
-%\begin{itemize}
-%\item{input : Energy\_BE,"EC1996.csv"}
-%\item{process : ghg.r line 412-465}
-%\item{output :ECO2}
-%\end{itemize} 
-%\end{small}	
 \end{frame}
 %----------------------------------------------------------------------------------------------
 
@@ -720,6 +673,59 @@ E_{i,h|i\in(275,277),j \notin J}&=&(E_{275}+E_{277}-\sum_{j\in J}E_{275,j})\\
 	  	\begin{figure}
 	\centering
 	 \includegraphics[width=1.00\textwidth]{noncount.png}
+	%\caption{}
+	%\label{IEA world balance}
+	\end{figure}	
+	
+\end{frame}
+%----------------------------------------------------------------------------------------------
+
+
+
+
+%-------------------------------- 슬라이드  -------------------------------------------------
+\begin{frame}
+	\frametitle{GTAP\_K\_R}
+\begin{enumerate}
+\item{input}
+	\begin{itemize}
+\item{IO data files: IO\_(type)\_(price)\_(sector)\_(year).csv}
+	\begin{itemize}
+	\item{type: 총거래표(T), 국내표(D), 수입표(M)}
+	\item{price: 생산자가격표(N), 기초가격표(P)}
+	\item{sector: 82 (소분류), 384 (기본부문)}
+	\item{year: 년도}
+	\end{itemize}
+\item{IO index files: indinex\_(sector)\_(year).csv}
+	\item{Energy balance files: EBS(year).csv}
+	\item{총발열량 $\rightarrow$ 순발열량 전환 factor:Heatconft.csv}
+	\item{배출계수:EF.cov}
+	\end{itemize}
+\item{process}
+	\begin{itemize}
+	\item{자료 준비: Dataload.r, IOimport.r}
+	\item{Step 1-2. :EnergyIO.r}
+	\item{Step 3-4. :GHG\_fuel.r}
+	\item{Process $CO_2$ and Non $CO_2$:GHG\_proc.r}
+	\end{itemize}		
+
+\item{output}
+\begin{itemize}
+\item{모든 결과물을 집적한 Rdata file :IO\_E\_G2\_(year).Rdata}
+\item{온실가스 IO:GIO\_(year).csv, GIO\_FD\_(year).Rdata}
+\end{itemize}		
+
+\end{enumerate}	
+\end{frame}
+%----------------------------------------------------------------------------------------------
+
+
+%-------------------------------- 슬라이드  -------------------------------------------------
+\begin{frame}
+	\frametitle{GTAP\_K\_R}
+	  	\begin{figure}
+	\centering
+	 \includegraphics[width=1.00\textwidth]{GTAPKR.png}
 	%\caption{}
 	%\label{IEA world balance}
 	\end{figure}	
