@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.31pt}
+\beamer@sectionintoc {1}{Introduction}{2}{0}{1}
+\beamer@sectionintoc {2}{Process}{8}{0}{2}
+\beamer@sectionintoc {3}{Step 1: 순 발열량 에너지 Balance 구축}{10}{0}{3}
+\beamer@sectionintoc {4}{Step 2: 에너지 원별 총수요 파악}{12}{0}{4}
+\beamer@sectionintoc {5}{Step 3: 에너지 '총수요'를 산업연관표에 할당 }{22}{0}{5}
+\beamer@sectionintoc {6}{Step 4:온실가스 계산 = 배출계수$\times $할당 에너지 }{29}{0}{6}

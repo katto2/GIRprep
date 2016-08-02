@@ -1,0 +1,22 @@
+{
+    "contents" : "",
+    "created" : 1429245970017.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "CFFA5FE8",
+    "lastKnownWriteTime" : 876438892,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "caption" : "EC",
+        "contentUrl" : "content?title=EC&file=4ea5e8054c4848d4bd7f8e28c4a1ea8b.htm",
+        "displayedObservations" : 21,
+        "displayedVariables" : 4,
+        "totalObservations" : 21,
+        "variables" : 4
+    },
+    "source_on_save" : false,
+    "type" : "r_dataframe"
+}
