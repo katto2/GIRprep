@@ -1,0 +1,6 @@
+\beamer@endinputifotherversion {3.31pt}
+\beamer@sectionintoc {1}{SAM 구축 순서}{3}{0}{1}
+\beamer@sectionintoc {2}{1. 산업 mapping}{5}{0}{2}
+\beamer@sectionintoc {3}{ 2. IO aggregation}{7}{0}{3}
+\beamer@sectionintoc {4}{ 3. SAM}{11}{0}{4}
+\beamer@sectionintoc {5}{4.Set}{17}{0}{5}

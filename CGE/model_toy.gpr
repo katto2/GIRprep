@@ -1,0 +1,15 @@
+[PROJECT]
+
+[OPENWINDOW_1]
+MAXIM=0
+TOP=104
+LEFT=104
+HEIGHT=624
+WIDTH=1604
+
+[RP:TOYMODEL_ORIGIN_ROBUST_1223_0H14M]
+1=
+
+[MRUFILES]
+1=C:\work_2016\0000_Hybrid_2nd\080305GiR\CGE\toymodel_origin_robust_1223_0h14m.lst
+2=C:\work_2016\0000_Hybrid_2nd\080305GiR\CGE\toymodel_origin_robust_1223_0h14m.gms

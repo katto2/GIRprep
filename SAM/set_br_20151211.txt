@@ -1,0 +1,111 @@
+ACTP /ELEC-a,GASHeat-a,OIL-a,COAL-a,ENIT-a,NEINT-a,Agri-a,CO2-a,ELEC-c,GASHeat-c,OIL-c,COAL-c,ENIT-c,NEINT-c,Agri-c,CO2-c,Labor,Capital,Household,GoV,NRES,Ptaxin,Ptaxetc,Tarrif,YTAX,S-I,ROW,process,Total /
+ACT(ACTP) /ELEC-a,GASHeat-a,OIL-a,COAL-a,ENIT-a,NEINT-a,Agri-a,CO2-a,ELEC-c,GASHeat-c,OIL-c,COAL-c,ENIT-c,NEINT-c,Agri-c,CO2-c,Labor,Capital,Household,GoV,NRES,Ptaxin,Ptaxetc,Tarrif,YTAX,S-I,ROW,process,Total /
+ACNT(ACT)
+AC(ACT) /ELEC-a,GASHeat-a,OIL-a,COAL-a,ENIT-a,NEINT-a,Agri-a,CO2-a,ELEC-c,GASHeat-c,OIL-c,COAL-c,ENIT-c,NEINT-c,Agri-c,CO2-c,Labor,Capital,Household,GoV,NRES,Ptaxin,Ptaxetc,Tarrif,YTAX,S-I,ROW,process /
+ACNGT(ACT) /ELEC-a,GASHeat-a,OIL-a,COAL-a,ENIT-a,NEINT-a,Agri-a,ELEC-c,GASHeat-c,OIL-c,COAL-c,ENIT-c,NEINT-c,Agri-c,Labor,Capital,Household,GoV,NRES,Ptaxin,Ptaxetc,Tarrif,YTAX,S-I,ROW,process,Total /
+ACNGA(AC) /ELEC-a,GASHeat-a,OIL-a,COAL-a,ENIT-a,NEINT-a,Agri-a,ELEC-c,GASHeat-c,OIL-c,COAL-c,ENIT-c,NEINT-c,Agri-c,Labor,Capital,Household,GoV,NRES,Ptaxin,Ptaxetc,Tarrif,YTAX,S-I,ROW,process /
+A(AC) /ELEC-a,GASHeat-a,OIL-a,COAL-a,ENIT-a,NEINT-a,Agri-a /
+C(AC) /ELEC-c,GASHeat-c,OIL-c,COAL-c,ENIT-c,NEINT-c,Agri-c /
+ENC(C) /GASHeat-c,OIL-c,COAL-c /
+ENCN(C) /ELEC-c,ENIT-c,NEINT-c,Agri-c /
+Sfuel(C) /COAL-c /
+Lfuel(C) /GASHeat-c,OIL-c /
+M(C) /ENIT-c,NEINT-c,Agri-c /
+ELECC(C) /ELEC-c/
+ENITC(C) /ENIT-c/
+NEINTC(C) /NEINT-c/
+AgriC(C) /Agri-c/
+GASHeatac(C) /GASHeat-c/
+OILac(C) /OIL-c/
+COALac(C) /COAL-c/
+FuelA(A,C)
+/
+ELEC-a.(GASHeat-c,OIL-c,COAL-c )
+GASHeat-a.(GASHeat-c,OIL-c,COAL-c )
+OIL-a.(GASHeat-c,OIL-c )
+COAL-a.(GASHeat-c,OIL-c,COAL-c )
+ENIT-a.(GASHeat-c,OIL-c,COAL-c )
+NEINT-a.(GASHeat-c,OIL-c,COAL-c )
+Agri-a.(GASHeat-c,OIL-c,COAL-c )
+/
+GC(AC) /CO2-c /
+SFuelA(A,C)
+/
+ELEC-a.(COAL-c )
+GASHeat-a.(COAL-c )
+COAL-a.(COAL-c )
+ENIT-a.(COAL-c )
+NEINT-a.(COAL-c )
+Agri-a.(COAL-c )
+/
+LFuelA(A,C)
+/
+ELEC-a.(GASHeat-c,OIL-c )
+GASHeat-a.(GASHeat-c,OIL-c )
+OIL-a.(GASHeat-c,OIL-c )
+COAL-a.(GASHeat-c,OIL-c )
+ENIT-a.(GASHeat-c,OIL-c )
+NEINT-a.(GASHeat-c,OIL-c )
+Agri-a.(GASHeat-c,OIL-c )
+/
+XPXC(C,A)
+/
+ELEC-c.(ELEC-a )
+GASHeat-c.(GASHeat-a )
+OIL-c.(OIL-a )
+COAL-c.(COAL-a )
+ENIT-c.(ENIT-a )
+NEINT-c.(NEINT-a )
+Agri-c.(Agri-a )
+/
+XAPA(C,A)
+/
+ELEC-c.(ELEC-a,GASHeat-a,OIL-a,COAL-a,ENIT-a,NEINT-a,Agri-a )
+ENIT-c.(ELEC-a,GASHeat-a,OIL-a,COAL-a,ENIT-a,NEINT-a,Agri-a )
+NEINT-c.(ELEC-a,GASHeat-a,OIL-a,COAL-a,ENIT-a,NEINT-a,Agri-a )
+Agri-c.(ELEC-a,GASHeat-a,OIL-a,COAL-a,ENIT-a,NEINT-a,Agri-a )
+/
+XEPA(C,A)
+/
+GASHeat-c.(ELEC-a,GASHeat-a,OIL-a,COAL-a,ENIT-a,NEINT-a,Agri-a )
+OIL-c.(ELEC-a,GASHeat-a,OIL-a,COAL-a,ENIT-a,NEINT-a,Agri-a )
+COAL-c.(ELEC-a,GASHeat-a,COAL-a,ENIT-a,NEINT-a,Agri-a )
+/
+FD(ACT) /GoV,S-I /
+FD_C(C,FD)
+/
+GASHeat-c.(S-I )
+OIL-c.(S-I )
+COAL-c.(S-I )
+ENIT-c.(S-I )
+NEINT-c.(GoV,S-I )
+Agri-c.(S-I )
+/
+F(AC) /Labor,Capital /
+L(F) /Labor /
+K(F) /Capital /
+INS(AC) /Household,GoV,NRES,Ptaxin,Ptaxetc,Tarrif,YTAX,S-I,ROW /
+INSD(INS) /Household,GoV,NRES,Ptaxin,Ptaxetc,Tarrif,YTAX,S-I /
+INSDN(INS) /ROW /
+H(INSD) /Household /
+XACH(H,C)
+/
+Household.ELEC-c
+Household.GASHeat-c
+Household.OIL-c
+Household.COAL-c
+Household.ENIT-c
+Household.NEINT-c
+Household.Agri-c
+/
+Alias(ACT,ACTPP);
+Alias(INS,INSP);
+Alias(AC,ACP);
+Alias(A,AP);
+Alias(C,CP);
+Alias(F,FP);
+Alias(H,HP);
+Alias(GC,GCP);
+Alias(ENC,ENCPP);
+ACNT(ACT)=yes;
+ACNT('Total')=no;
